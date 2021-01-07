@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%=title %></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <h1><%=title %> в EJS</h1>
+
+    <h3>Users</h3>
+    <% for(var i=0; i<users.length;i++) {%>
+        <ul>
+
+            <li>ID: <%=users[i].id %></li>
+            <li>Name: <%=users[i].name %></li>
+            <li>Email: <%=users[i].email %></li>
+            <li>CreatedAt: <%=users[i].createdAt %></li>
+        </ul>
+    <%} %>
+    <p>Total count: <%=count %></p>
+</body>
+<html>
